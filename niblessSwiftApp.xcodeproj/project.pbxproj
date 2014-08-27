@@ -7,44 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E421473619AE81B00089E51B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421473519AE81B00089E51B /* main.swift */; };
-		E421473819AE81B00089E51B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421473719AE81B00089E51B /* AppDelegate.swift */; };
+		E421475719AE82180089E51B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E421475619AE82180089E51B /* Info.plist */; };
+		E421475919AE82250089E51B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421475819AE82250089E51B /* main.swift */; };
+		E421475C19AE823D0089E51B /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421475A19AE823D0089E51B /* app.swift */; };
+		E421475D19AE823D0089E51B /* controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421475B19AE823D0089E51B /* controller.swift */; };
+		E421475F19AE82490089E51B /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421475E19AE82490089E51B /* menu.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E421474319AE81B00089E51B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E421472819AE81B00089E51B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E421472F19AE81B00089E51B;
-			remoteInfo = niblessSwiftApp;
-		};
-		E421475219AE81C70089E51B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E421472819AE81B00089E51B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E421472F19AE81B00089E51B;
-			remoteInfo = niblessSwiftApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E421473019AE81B00089E51B /* niblessSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = niblessSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E421473419AE81B00089E51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E421473519AE81B00089E51B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		E421473719AE81B00089E51B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E421474219AE81B00089E51B /* niblessSwiftAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = niblessSwiftAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E421475619AE82180089E51B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E421475819AE82250089E51B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E421475A19AE823D0089E51B /* app.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
+		E421475B19AE823D0089E51B /* controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controller.swift; sourceTree = "<group>"; };
+		E421475E19AE82490089E51B /* menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
+		E447737D19AE838C0050F1F9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E421472D19AE81B00089E51B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E421473F19AE81B00089E51B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,6 +38,7 @@
 		E421472719AE81B00089E51B = {
 			isa = PBXGroup;
 			children = (
+				E447737D19AE838C0050F1F9 /* README.md */,
 				E421473219AE81B00089E51B /* niblessSwiftApp */,
 				E421473119AE81B00089E51B /* Products */,
 			);
@@ -66,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				E421473019AE81B00089E51B /* niblessSwiftApp.app */,
-				E421474219AE81B00089E51B /* niblessSwiftAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,7 +55,9 @@
 		E421473219AE81B00089E51B /* niblessSwiftApp */ = {
 			isa = PBXGroup;
 			children = (
-				E421473719AE81B00089E51B /* AppDelegate.swift */,
+				E421475E19AE82490089E51B /* menu.swift */,
+				E421475A19AE823D0089E51B /* app.swift */,
+				E421475B19AE823D0089E51B /* controller.swift */,
 				E421473319AE81B00089E51B /* Supporting Files */,
 			);
 			path = niblessSwiftApp;
@@ -83,8 +66,8 @@
 		E421473319AE81B00089E51B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E421473419AE81B00089E51B /* Info.plist */,
-				E421473519AE81B00089E51B /* main.swift */,
+				E421475819AE82250089E51B /* main.swift */,
+				E421475619AE82180089E51B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,25 +92,6 @@
 			productReference = E421473019AE81B00089E51B /* niblessSwiftApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E421474119AE81B00089E51B /* niblessSwiftAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E421474F19AE81B00089E51B /* Build configuration list for PBXNativeTarget "niblessSwiftAppTests" */;
-			buildPhases = (
-				E421473E19AE81B00089E51B /* Sources */,
-				E421473F19AE81B00089E51B /* Frameworks */,
-				E421474019AE81B00089E51B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E421474419AE81B00089E51B /* PBXTargetDependency */,
-				E421475319AE81C70089E51B /* PBXTargetDependency */,
-			);
-			name = niblessSwiftAppTests;
-			productName = niblessSwiftAppTests;
-			productReference = E421474219AE81B00089E51B /* niblessSwiftAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -139,10 +103,6 @@
 				TargetAttributes = {
 					E421472F19AE81B00089E51B = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					E421474119AE81B00089E51B = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = E421472F19AE81B00089E51B;
 					};
 				};
 			};
@@ -160,7 +120,6 @@
 			projectRoot = "";
 			targets = (
 				E421472F19AE81B00089E51B /* niblessSwiftApp */,
-				E421474119AE81B00089E51B /* niblessSwiftAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -170,13 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E421474019AE81B00089E51B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E421475719AE82180089E51B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,32 +140,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E421473819AE81B00089E51B /* AppDelegate.swift in Sources */,
-				E421473619AE81B00089E51B /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E421473E19AE81B00089E51B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E421475919AE82250089E51B /* main.swift in Sources */,
+				E421475C19AE823D0089E51B /* app.swift in Sources */,
+				E421475F19AE82490089E51B /* menu.swift in Sources */,
+				E421475D19AE823D0089E51B /* controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E421474419AE81B00089E51B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E421472F19AE81B00089E51B /* niblessSwiftApp */;
-			targetProxy = E421474319AE81B00089E51B /* PBXContainerItemProxy */;
-		};
-		E421475319AE81C70089E51B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E421472F19AE81B00089E51B /* niblessSwiftApp */;
-			targetProxy = E421475219AE81C70089E51B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E421474A19AE81B00089E51B /* Debug */ = {
@@ -314,42 +249,6 @@
 			};
 			name = Release;
 		};
-		E421475019AE81B00089E51B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/niblessSwiftApp.app/Contents/MacOS/niblessSwiftApp";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = niblessSwiftAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		E421475119AE81B00089E51B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/niblessSwiftApp.app/Contents/MacOS/niblessSwiftApp";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = niblessSwiftAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -369,14 +268,7 @@
 				E421474E19AE81B00089E51B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		E421474F19AE81B00089E51B /* Build configuration list for PBXNativeTarget "niblessSwiftAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E421475019AE81B00089E51B /* Debug */,
-				E421475119AE81B00089E51B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
