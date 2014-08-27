@@ -1,11 +1,16 @@
 //
 //  main.swift
-//  niblessSwiftApp
 //
-//  Created by Guy Barnard on 8/27/14.
-//  Copyright (c) 2014 Guy Barnard. All rights reserved.
+//  Copyright (c) 2014 Domabo. All rights reserved.
 //
 
 import Cocoa
 
-NSApplicationMain(C_ARGC, C_ARGV)
+let app      = NSApplication.sharedApplication()
+let delegate = AppDelegate(app: app)
+app.delegate = delegate
+let menu = Menu(app: app)
+app.setActivationPolicy(.Regular)
+atexit_b { app.setActivationPolicy(.Prohibited); return }
+
+app.run()

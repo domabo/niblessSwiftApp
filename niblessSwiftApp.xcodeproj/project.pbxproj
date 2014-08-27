@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		E421473619AE81B00089E51B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421473519AE81B00089E51B /* main.swift */; };
 		E421473819AE81B00089E51B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421473719AE81B00089E51B /* AppDelegate.swift */; };
-		E421473A19AE81B00089E51B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E421473919AE81B00089E51B /* Images.xcassets */; };
-		E421473D19AE81B00089E51B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E421473B19AE81B00089E51B /* MainMenu.xib */; };
-		E421474919AE81B00089E51B /* niblessSwiftAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421474819AE81B00089E51B /* niblessSwiftAppTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E421474319AE81B00089E51B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E421472819AE81B00089E51B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E421472F19AE81B00089E51B;
+			remoteInfo = niblessSwiftApp;
+		};
+		E421475219AE81C70089E51B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E421472819AE81B00089E51B /* Project object */;
 			proxyType = 1;
@@ -29,11 +33,7 @@
 		E421473419AE81B00089E51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E421473519AE81B00089E51B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E421473719AE81B00089E51B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E421473919AE81B00089E51B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E421473C19AE81B00089E51B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E421474219AE81B00089E51B /* niblessSwiftAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = niblessSwiftAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E421474719AE81B00089E51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E421474819AE81B00089E51B /* niblessSwiftAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = niblessSwiftAppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				E421473219AE81B00089E51B /* niblessSwiftApp */,
-				E421474519AE81B00089E51B /* niblessSwiftAppTests */,
 				E421473119AE81B00089E51B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				E421473719AE81B00089E51B /* AppDelegate.swift */,
-				E421473919AE81B00089E51B /* Images.xcassets */,
-				E421473B19AE81B00089E51B /* MainMenu.xib */,
 				E421473319AE81B00089E51B /* Supporting Files */,
 			);
 			path = niblessSwiftApp;
@@ -88,23 +85,6 @@
 			children = (
 				E421473419AE81B00089E51B /* Info.plist */,
 				E421473519AE81B00089E51B /* main.swift */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E421474519AE81B00089E51B /* niblessSwiftAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				E421474819AE81B00089E51B /* niblessSwiftAppTests.swift */,
-				E421474619AE81B00089E51B /* Supporting Files */,
-			);
-			path = niblessSwiftAppTests;
-			sourceTree = "<group>";
-		};
-		E421474619AE81B00089E51B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E421474719AE81B00089E51B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +121,7 @@
 			);
 			dependencies = (
 				E421474419AE81B00089E51B /* PBXTargetDependency */,
+				E421475319AE81C70089E51B /* PBXTargetDependency */,
 			);
 			name = niblessSwiftAppTests;
 			productName = niblessSwiftAppTests;
@@ -189,8 +170,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E421473A19AE81B00089E51B /* Images.xcassets in Resources */,
-				E421473D19AE81B00089E51B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +196,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E421474919AE81B00089E51B /* niblessSwiftAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,18 +207,12 @@
 			target = E421472F19AE81B00089E51B /* niblessSwiftApp */;
 			targetProxy = E421474319AE81B00089E51B /* PBXContainerItemProxy */;
 		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E421473B19AE81B00089E51B /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E421473C19AE81B00089E51B /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
+		E421475319AE81C70089E51B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E421472F19AE81B00089E51B /* niblessSwiftApp */;
+			targetProxy = E421475219AE81C70089E51B /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E421474A19AE81B00089E51B /* Debug */ = {
